@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Student Library Management System</h1>
+
+    <div class="container">
+
+        <h2>Add Book</h2>
+
+        <input type="text" id="id" placeholder="Book ID">
+        <input type="text" id="title" placeholder="Book Title">
+        <input type="text" id="author" placeholder="Author">
+        <input type="text" id="category" placeholder="Category">
+
+        <button onclick="addBook()">Add Book</button>
+        <button onclick="updateBook()">Update Book</button>
+
+        <h2>Book Records</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="bookList"></tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
